@@ -14,7 +14,7 @@ function DownloadApp() {
     const { t, i18n } = useTranslation();
     const isRTL = i18n.language === 'ar';
     return (
-        <section id="downloadApp" className="py-20 bg-gradient-to-br from-[var(--background-default)] via-white to-[var(--secondary-light)] overflow-hidden">
+        <section id="downloadApp" className="py-20 bg-gradient-to-br from-gray-50 to-orange-50 overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-medium mb-6">

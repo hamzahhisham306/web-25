@@ -90,10 +90,10 @@ function ContactUs({ contactRef }) {
 
     return (
         <section
-            className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[var(--background-default)] via-white to-[var(--secondary-light)]"
+            className="min-h-screen py-16 px-4 sm:px-6 lg:px-8"
             ref={contactRef}
             id='contact'
-            style={{ marginTop: '100px' }}
+            style={{ backgroundColor: 'var(--background-default)', marginTop: '100px' }}
             // dir={isRTL ? 'ltr' : 'ltr'}
         >
             <div className="max-w-6xl mx-auto">
