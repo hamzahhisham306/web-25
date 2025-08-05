@@ -24,7 +24,7 @@ function EasySteps() {
     ]
     return (
         <>
-            <div className='container mx-auto px-4 lg:px-8 max-w-7xl text-center mt-10' id='feature'>
+            <div className='container mx-auto px-4 lg:px-8 max-w-7xl text-center mt-10 ' id='feature'>
                 <div>
                     <h2 className='text-[var(--primary)] text-lg font-bold'>How it works</h2>
                     <h1 className='text-[var(--text-body)] text-4xl font-bold mt-2'>3 Easy Steps</h1>

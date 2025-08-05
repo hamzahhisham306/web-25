@@ -14,13 +14,25 @@ export const metadata: Metadata = {
   description: 'Authentic Middle Eastern cuisine delivery',
 }
 
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'ar' }
+  ];
+}
+
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode
+  params: { locale: string }
 }) {
+  const { locale } = params;
+  const direction = locale === 'ar' ? 'rtl' : 'ltr';
+
   return (
-    <html lang="en">
+    <html lang={locale} dir={direction}>
       <body className={`${montserrat.variable} font-montserrat`}>
         <TranslationProvider>
           {children}
