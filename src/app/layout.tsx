@@ -21,14 +21,15 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const { locale } = params;
+  // Await the params Promise
+  const { locale } = await params;
   const direction = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
